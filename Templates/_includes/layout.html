@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    a {
+        text-decoration: none;
+        color: #A0E0A0;
+    }
+    a:visited {
+        text-decoration: none;  color: #A0E0A0; 
+    }
+    a:hover {text-decoration: none; color:#BBE2BB;}
+    body {
+        background-color: #121212;
+        color: #A0E0A0;
+        font-size: x-small;
+        font-family: sans-serif, monospace;
+    }
+    h1 {
+        color: #A0E0A0;
+        font-family: sans-serif, monospace;
+    }
+    h2 {
+        color: #A0E0A0;
+        font-family: sans-serif, monospace;
+    }
+    .container {
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: fit-content(40%) fit-content(40%);
+    }
+    .container_tile {
+        background-color: #333333;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: left;
+        overflow: hidden;
+    }
+    .container_tile:hover {
+        text-decoration: none; background-color:#555555;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="/" class="active">Startpage</a>
+        </ul>
+    </nav>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html>

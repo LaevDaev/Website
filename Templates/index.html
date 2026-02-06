@@ -1,0 +1,13 @@
+---
+title: Levent Gattermann 
+layout: layout.html
+---
+<div class="container">
+{% for project in collections.project %}
+<a class="container_tile_link" href="{{project.page.url}}/">
+<div class="container_tile">
+    {{ project.data.title }}
+</div>
+</a>
+{% endfor %}
+</div>
